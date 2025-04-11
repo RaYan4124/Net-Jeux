@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer  type="module" src="demo.js"></script>
+        <link rel="stylesheet" href="wind.css">
+        <title>Game</title>
+    </head>
+    <body>
+        <h1 class="main_titre">Simon Tatham's Portable Puzzle</h1>
+        <hr>
+        <div class="button_container">
+            <button class="button" id="new_game_button">New game</button>
+            <button class="button" id="restart_button">Restart game</button>
+            <button class="button" id="undo_button">Undo move</button>
+            <button class="button" id="redo_button">Redo move</button>
+            <button class="button" id="solve_button">Solve game</button>
+        </div>
+        <div class="game_countainer">
+            <canvas width="289" height="289" id="game_canvas"></canvas>
+        </div>
+        <hr>
+        <section>
+            <h2 class="ruls_title">Règles Du Jeu</h2>
+            <p class="ruls_p">1. Le but du jeu est de résoudre la grille. <br>
+            2. Clic gauche de la souris pour faire tourner la pièce dans le 
+            sens contraire des aiguilles d'une montre.<br>
+            3. Clic droit de la souris pour faire tourner la pièce dans le 
+            sens des aiguilles d'une montre.<br>
+            4. Appuyez sur 'Z' pour annuler un coup et 'Y' pour refaire un 
+            coup.<br>
+            5. Appuyez sur 'R' pour réinitialiser la grille.<br>
+            6. Appuyez sur 'S' pour afficher la solution.<br>
+            </p>
+        </section>
+        
+        <footer></footer>
+        
+    </body>
+</html>
