@@ -8,6 +8,10 @@ Net Jeux est un projet de bibliothèque en C pour faciliter le développement de
 - Pierre : pierre.pierre@etu.u-bordeaux.fr
 
 ---
+## Compilation
+```bash
+ mkdir build; cd build; cmake ..; make
+```
 
 ## Règles du jeu
 
@@ -60,28 +64,6 @@ La grille peut contenir des cases vides.
 Les solutions contenant des boucles sont acceptées.
 
 Chaque case de la grille est référencée par ses coordonnées (i, j), où (0,0) correspond au coin supérieur gauche, selon la notation des matrices.
-
-## Exemple
-
-## Grille de départ
-     0 1 2 3 4
-     ----------
-  0 |┘ ^ < └ v |
-  1 |┬ ┤ ┴ ├ ├ |
-  2 |> ^ ┤ < - |
-  3 |v ┬ ┴ ┘ | |
-  4 |> ┤ v > v |
-     ----------
-
-# Solution
-     0 1 2 3 4
-     ----------
-  0 |┌ < > ┐ v |
-  1 |├ ┬ ┬ ┴ ┤ |
-  2 |^ ^ ├ < | |
-  3 |> ┬ ┴ ┐ | |
-  4 |> ┴ < ^ ^ |
-     ----------
 
 
 Cette représentation textuelle est utilisée dans le programme game_text via la fonction game_print().
