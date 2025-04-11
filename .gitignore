@@ -1,0 +1,36 @@
+# Ignorer tous les fichiers sauf les sources .c et les bibliothèques .a
+*
+# Garde les fichiers sources .c
+!*.c
+!*.h
+sdl2.cmake
+!/res/
+
+# Fichiers objets de compilation
+*.o
+
+# Fichiers exécutables (sans extension ou avec des noms spécifiques)
+*.out
+*.exe
+*.bin
+
+# Répertoires de compilation et de build
+/build/
+/bin/
+/obj/
+
+# Fichiers de sauvegarde d'éditeur et temporaires
+*~
+*.swp
+.DS_Store
+
+# Répertoires temporaires et caches
+*.tmp
+.cache/
+*.log
+
+# Éventuels fichiers de configuration spécifiques à l'environnement
+.vscode/
+.idea/
+
+tmp.c
